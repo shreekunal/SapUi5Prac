@@ -90,17 +90,116 @@
       },
       "routes": [
         {
-          "name": "RouteView1",
-          "pattern": ":?query:",
+          "name": "Categories",
+          "pattern": "",
           "target": [
             "TargetView1"
+          ]
+        },
+        {
+          "name": "Products",
+          "pattern": "view2",
+          "target": [
+            "TargetView2"
+          ]
+        },
+        {
+          "name": "Customers",
+          "pattern": "view3",
+          "target": [
+            "TargetView3"
+          ]
+        },
+        {
+          "name": "Orders",
+          "pattern": "view4",
+          "target": [
+            "TargetView4"
+          ]
+        },
+        {
+          "name": "Employees",
+          "pattern": "view5",
+          "target": [
+            "TargetView5"
+          ]
+        },
+        {
+          "name": "Suppliers",
+          "pattern": "view6",
+          "target": [
+            "TargetView6"
+          ]
+        },
+        {
+          "name": "Shippers",
+          "pattern": "view7",
+          "target": [
+            "TargetView7"
+          ]
+        },
+        {
+          "name": "Regions",
+          "pattern": "view8",
+          "target": [
+            "TargetView8"
+          ]
+        },
+        {
+          "name": "Invoices",
+          "pattern": "view9",
+          "target": [
+            "TargetView9"
+          ]
+        },
+        {
+          "name": "Sales",
+          "pattern": "view10",
+          "target": [
+            "TargetView10"
           ]
         }
       ],
       "targets": {
         "TargetView1": {
           "id": "View1",
-          "name": "View1"
+          "name": "CategoriesView1"
+        },
+        "TargetView2": {
+          "id": "View2",
+          "name": "ProductsView2"
+        },
+        "TargetView3": {
+          "id": "View3",
+          "name": "CustomersView3"
+        },
+        "TargetView4": {  
+          "id": "View4",
+          "name": "OrdersView4"
+        },
+        "TargetView5": {  
+          "id": "View5",
+          "name": "EmployeesView5"
+        },
+        "TargetView6": {  
+          "id": "View6",
+          "name": "SuppliersView6"
+        },
+        "TargetView7": {  
+          "id": "View7",
+          "name": "ShippersView7"
+        },
+        "TargetView8": {  
+          "id": "View8",
+          "name": "RegionsView8"
+        },
+        "TargetView9": {  
+          "id": "View9",
+          "name": "InvoicesView9"
+        },
+        "TargetView10": {  
+          "id": "View10",
+          "name": "SalesView10"
         }
       }
     },

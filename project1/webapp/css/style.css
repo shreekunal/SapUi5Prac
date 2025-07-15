@@ -1,1 +1,18 @@
 /* Enter your custom styles here */
+.gridItem {
+  width: 200px;
+  height: 150px;
+  box-sizing: border-box;
+}
+[id$="title"] {
+  font-size: x-large;
+}
+.heading {
+  color: orangered;
+}
+.icons{
+    color: orange;
+}
+.panelBg {
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.308);
+}

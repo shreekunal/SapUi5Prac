@@ -1,0 +1,7 @@
+<mvc:View controllerName="project1.controller.InvoicesView9"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+
+    <Page id="page9" title="Invoices">
+    </Page>
+</mvc:View>
