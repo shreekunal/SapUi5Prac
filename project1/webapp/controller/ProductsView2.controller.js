@@ -7,6 +7,8 @@ sap.ui.define([
     return Controller.extend("project1.controller.ProductsView2", {
         onInit() {
         },
-
+        onProductSelect(){
+            this.getOwnerComponent().getRouter().navTo("Customers");
+        }
     });
 });

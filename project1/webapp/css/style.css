@@ -4,15 +4,42 @@
   height: 150px;
   box-sizing: border-box;
 }
-[id$="title"] {
+.title {
   font-size: x-large;
 }
 .heading {
   color: orangered;
 }
-.icons{
-    color: orange;
+.icons {
+  color: orange;
 }
 .panelBg {
   box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.308);
+}
+.center-title {
+  font-size: x-large;
+  margin-left: 30px;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+.Select {
+  margin-left: 30px;
+  height: 35px !important;
+}
+/* Increases font size of selected item */
+.sapMSltLabel {
+  font-size: 1rem !important;
+}
+
+/* Increases font size of items inside dropdown popup */
+.sapMSelectListItem {
+  font-size: 1rem !important;
+}
+
+.tableHead {
+  font-size: large !important;
+}
+
+.tableData {
+  font-size: medium !important;
 }
