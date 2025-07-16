@@ -1,7 +1,46 @@
 <mvc:View controllerName="project1.controller.CustomersView3"
     xmlns:mvc="sap.ui.core.mvc"
-    xmlns="sap.m">
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
 
     <Page id="page3" title="Customers">
+        <VBox
+            justifyContent="Center"
+            alignItems="Center">
+            <Panel class="panelBg">
+                <VBox>
+                    <Title
+                        text="Customer directory and contact information"
+                        class="sapUiSmallMarginTop center-title" />
+                    <Table
+                        id="productTable"
+                        inset="true"
+                        items="{/Customers}"
+                        itemPress="onCustomersSelect"
+                        class="productTable">
+                        <columns>
+                            <Column>
+                                <Text text="Customer ID" class="tableHead" />
+                            </Column>
+                            <Column>
+                                <Text text="Company" class="tableHead" />
+                            </Column>
+                            <Column>
+                                <Text text="City" class="tableHead" />
+                            </Column>
+                        </columns>
+                        <items>
+                            <ColumnListItem type="Navigation">
+                                <cells>
+                                    <Text text="{CustomerID}" class="tableData" />
+                                    <Text text="{CompanyName}" class="tableData" />
+                                    <Text text="{City}" class="tableData" />
+                                </cells>
+                            </ColumnListItem>
+                        </items>
+                    </Table>
+                </VBox>
+            </Panel>
+        </VBox>
     </Page>
 </mvc:View>

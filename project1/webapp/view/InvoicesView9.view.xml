@@ -1,7 +1,50 @@
 <mvc:View controllerName="project1.controller.InvoicesView9"
     xmlns:mvc="sap.ui.core.mvc"
-    xmlns="sap.m">
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
 
     <Page id="page9" title="Invoices">
+        <VBox
+            justifyContent="Center"
+            alignItems="Center">
+            <Panel class="panelBg">
+                <VBox>
+                    <Title
+                        text="Financial records and billing management"
+                        class="sapUiSmallMarginTop center-title" />
+                    <Table
+                        id="productTable"
+                        inset="true"
+                        items="{/Invoices}"
+                        itemPress="onInvoicesSelect"
+                        class="productTable">
+                        <columns>
+                            <Column>
+                                <Text text="Order ID" class="tableHead" />
+                            </Column>
+                            <Column>
+                                <Text text="Customer Name" class="tableHead" />
+                            </Column>
+                            <Column>
+                                <Text text="Freight" class="tableHead" />
+                            </Column>
+                            <Column>
+                                <Text text="Order Date" class="tableHead" />
+                            </Column>
+                        </columns>
+                        <items>
+                            <ColumnListItem type="Navigation">
+                                <cells>
+                                    <Text text="{OrderID}" class="tableData" />
+                                    <Text text="{CustomerName}" class="tableData" />
+                                    <Text text="{Freight}" class="tableData" />
+                                    <Text text="{OrderDate}" class="tableData" />
+                                </cells>
+                            </ColumnListItem>
+                        </items>
+                    </Table>
+                </VBox>
+            </Panel>
+        </VBox>
     </Page>
 </mvc:View>

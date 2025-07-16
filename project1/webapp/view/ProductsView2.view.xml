@@ -12,8 +12,8 @@
             <Panel class="panelBg">
                 <VBox>
                     <Title
-                        text="All products, with filtering by category"
-                        class="sapUiSmallMarginTop center-title heading" />
+                        text="Browse and filter products by category"
+                        class="sapUiSmallMarginTop center-title" />
                     <Select
                         change="onCategoryChange"
                         items="{/Categories}"
@@ -28,7 +28,8 @@
                         id="productTable"
                         inset="true"
                         items="{/Products}"
-                        itemPress="onProductSelect">
+                        itemPress="onProductSelect"
+                        class="productTable">
                         <columns>
                             <Column>
                                 <Text text="ID" class="tableHead" />
@@ -46,10 +47,10 @@
                         <items>
                             <ColumnListItem type="Navigation">
                                 <cells>
-                                    <Text text="{ProductID}" class="tableData"/>
-                                    <Text text="{ProductName}" class="tableData"/>
-                                    <Text text="{UnitPrice}" class="tableData"/>
-                                    <Text text="{UnitsInStock}" class="tableData"/>
+                                    <Text text="{ProductID}" class="tableData" />
+                                    <Text text="{ProductName}" class="tableData" />
+                                    <Text text="{UnitPrice}" class="tableData" />
+                                    <Text text="{UnitsInStock}" class="tableData" />
                                 </cells>
                             </ColumnListItem>
                         </items>
