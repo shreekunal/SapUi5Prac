@@ -7,7 +7,7 @@
     <Page id="page1" title="Categories">
         <VBox id="main" justifyContent="Center"
             height="80vh" alignItems="Center">
-            <Title id="title" text="Selecting a category to go to that Product's page"
+            <Title id="title" text="Select a category to go to that Product's page"
                 class="sapUiSmallMarginBottom title" />
             <Panel id="panel" class="panelBg" width="860px">
                 <f:GridList

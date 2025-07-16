@@ -8,5 +8,15 @@ sap.ui.define([
         onInit() {
         },
 
+        onRegionSelect: function (oEvent) {
+            // Get the selected region context
+            var oRegionContext = oEvent.getSource().getBindingContext();
+            var sRegionId = oRegionContext.getProperty("RegionID");
+
+            // Navigate to Invoices route with RegionId
+            this.getOwnerComponent().getRouter().navTo("Invoices", {
+                RegionId: sRegionId
+            });
+        }
     });
 });

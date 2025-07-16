@@ -8,5 +8,15 @@ sap.ui.define([
         onInit() {
         },
 
+        onSupplierSelect: function (oEvent) {
+            // Get the selected supplier context
+            var oSupplierContext = oEvent.getSource().getBindingContext();
+            var sSupplierId = oSupplierContext.getProperty("SupplierID");
+
+            // Navigate to Shippers route with SupplierId
+            this.getOwnerComponent().getRouter().navTo("Shippers", {
+                SupplierId: sSupplierId
+            });
+        }
     });
 });

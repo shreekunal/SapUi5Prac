@@ -15,7 +15,6 @@
                         id="productTable"
                         inset="true"
                         items="{/Suppliers}"
-                        itemPress="onSuppliersSelect"
                         class="productTable">
                         <columns>
                             <Column>
@@ -29,7 +28,9 @@
                             </Column>
                         </columns>
                         <items>
-                            <ColumnListItem type="Navigation">
+                            <ColumnListItem
+                                type="Navigation"
+                                press="onSupplierSelect">
                                 <cells>
                                     <Text text="{CompanyName}" class="tableData" />
                                     <Text text="{ContactName}" class="tableData" />

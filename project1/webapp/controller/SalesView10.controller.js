@@ -8,5 +8,15 @@ sap.ui.define([
         onInit() {
         },
 
+        onSalesComplete: function (oEvent) {
+            // Get the selected sales item context
+            var oSalesContext = oEvent.getSource().getBindingContext();
+            var sSaleAmount = oSalesContext.getProperty("SaleAmount");
+
+            console.log("Completed sales cycle with amount:", sSaleAmount);
+
+            // Navigate back to Categories (View 1) to complete the cycle
+            this.getOwnerComponent().getRouter().navTo("Categories");
+        }
     });
 });

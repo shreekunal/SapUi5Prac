@@ -8,5 +8,15 @@ sap.ui.define([
         onInit() {
         },
 
+        onOrderSelect: function (oEvent) {
+            // Get the selected order context
+            var oOrderContext = oEvent.getSource().getBindingContext();
+            var sOrderId = oOrderContext.getProperty("OrderID");
+
+            // Navigate to Employees route with OrderId
+            this.getOwnerComponent().getRouter().navTo("Employees", {
+                OrderId: sOrderId
+            });
+        }
     });
 });

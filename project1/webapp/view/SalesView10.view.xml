@@ -29,7 +29,9 @@
                             </Column>
                         </columns>
                         <items>
-                            <ColumnListItem type="Navigation">
+                            <ColumnListItem
+                                type="Navigation"
+                                press="onSalesComplete">
                                 <cells>
                                     <Text text="{CompanyName}" class="tableData" />
                                     <Text text="{SaleAmount}" class="tableData" />

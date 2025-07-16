@@ -98,63 +98,63 @@
         },
         {
           "name": "Products",
-          "pattern": "view2",
+          "pattern": "Products/{CategoryId}",
           "target": [
             "TargetView2"
           ]
         },
         {
           "name": "Customers",
-          "pattern": "view3",
+          "pattern": "Customers/{ProductId}",
           "target": [
             "TargetView3"
           ]
         },
         {
           "name": "Orders",
-          "pattern": "view4",
+          "pattern": "Orders/{CustomerId}",
           "target": [
             "TargetView4"
           ]
         },
         {
           "name": "Employees",
-          "pattern": "view5",
+          "pattern": "Employees/{OrderId}",
           "target": [
             "TargetView5"
           ]
         },
         {
           "name": "Suppliers",
-          "pattern": "view6",
+          "pattern": "Suppliers/{EmployeeId}",
           "target": [
             "TargetView6"
           ]
         },
         {
           "name": "Shippers",
-          "pattern": "view7",
+          "pattern": "Shippers/{SupplierId}",
           "target": [
             "TargetView7"
           ]
         },
         {
           "name": "Regions",
-          "pattern": "view8",
+          "pattern": "Regions/{ShipperId}",
           "target": [
             "TargetView8"
           ]
         },
         {
           "name": "Invoices",
-          "pattern": "view9",
+          "pattern": "Invoices/{RegionId}",
           "target": [
             "TargetView9"
           ]
         },
         {
           "name": "Sales",
-          "pattern": "view10",
+          "pattern": "Sales/{InvoiceId}",
           "target": [
             "TargetView10"
           ]

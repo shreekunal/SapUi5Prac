@@ -16,7 +16,6 @@
                         id="productTable"
                         inset="true"
                         items="{/Customers}"
-                        itemPress="onCustomersSelect"
                         class="productTable">
                         <columns>
                             <Column>
@@ -30,7 +29,9 @@
                             </Column>
                         </columns>
                         <items>
-                            <ColumnListItem type="Navigation">
+                            <ColumnListItem
+                                type="Navigation"
+                                press="onCustomerSelect">
                                 <cells>
                                     <Text text="{CustomerID}" class="tableData" />
                                     <Text text="{CompanyName}" class="tableData" />

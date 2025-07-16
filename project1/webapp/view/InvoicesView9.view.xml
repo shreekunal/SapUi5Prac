@@ -16,7 +16,6 @@
                         id="productTable"
                         inset="true"
                         items="{/Invoices}"
-                        itemPress="onInvoicesSelect"
                         class="productTable">
                         <columns>
                             <Column>
@@ -33,7 +32,9 @@
                             </Column>
                         </columns>
                         <items>
-                            <ColumnListItem type="Navigation">
+                            <ColumnListItem
+                                type="Navigation"
+                                press="onInvoiceSelect">
                                 <cells>
                                     <Text text="{OrderID}" class="tableData" />
                                     <Text text="{CustomerName}" class="tableData" />

@@ -15,7 +15,6 @@
                         id="productTable"
                         inset="true"
                         items="{/Orders}"
-                        itemPress="onOrdersSelect"
                         class="productTable">
                         <columns>
                             <Column>
@@ -29,7 +28,9 @@
                             </Column>
                         </columns>
                         <items>
-                            <ColumnListItem type="Navigation">
+                            <ColumnListItem
+                                type="Navigation"
+                                press="onOrderSelect">
                                 <cells>
                                     <Text text="{OrderID}" class="tableData" />
                                     <Text text="{CustomerID}" class="tableData" />

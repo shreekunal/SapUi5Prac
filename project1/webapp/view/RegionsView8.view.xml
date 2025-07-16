@@ -16,7 +16,6 @@
                         id="productTable"
                         inset="true"
                         items="{/Regions}"
-                        itemPress="onRegionsSelect"
                         class="productTable">
                         <columns>
                             <Column>
@@ -27,7 +26,9 @@
                             </Column>
                         </columns>
                         <items>
-                            <ColumnListItem type="Navigation">
+                            <ColumnListItem
+                                type="Navigation"
+                                press="onRegionSelect">
                                 <cells>
                                     <Text text="{RegionID}" class="tableData" />
                                     <Text text="{RegionDescription}" class="tableData" />

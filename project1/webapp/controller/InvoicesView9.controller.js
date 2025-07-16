@@ -8,5 +8,15 @@ sap.ui.define([
         onInit() {
         },
 
+        onInvoiceSelect: function (oEvent) {
+            // Get the selected invoice context  
+            var oInvoiceContext = oEvent.getSource().getBindingContext();
+            var sInvoiceId = oInvoiceContext.getProperty("OrderID"); // Using OrderID as invoice identifier
+
+            // Navigate to Sales route with InvoiceId
+            this.getOwnerComponent().getRouter().navTo("Sales", {
+                InvoiceId: sInvoiceId
+            });
+        }
     });
 });

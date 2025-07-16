@@ -8,5 +8,15 @@ sap.ui.define([
         onInit() {
         },
 
+        onEmployeeSelect: function (oEvent) {
+            // Get the selected employee context
+            var oEmployeeContext = oEvent.getSource().getBindingContext();
+            var sEmployeeId = oEmployeeContext.getProperty("EmployeeID");
+
+            // Navigate to Suppliers route with EmployeeId
+            this.getOwnerComponent().getRouter().navTo("Suppliers", {
+                EmployeeId: sEmployeeId
+            });
+        }
     });
 });

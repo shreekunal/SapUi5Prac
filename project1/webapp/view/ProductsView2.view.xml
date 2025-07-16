@@ -15,20 +15,20 @@
                         text="Browse and filter products by category"
                         class="sapUiSmallMarginTop center-title" />
                     <Select
+                        id="categorySelect"
                         change="onCategoryChange"
                         items="{/Categories}"
                         width="20%"
                         class="Select">
                         <core:Item
                             class="selectItems"
-                            key="{CategoryId}"
+                            key="{CategoryID}"
                             text="{CategoryName}" />
                     </Select>
                     <Table
                         id="productTable"
                         inset="true"
                         items="{/Products}"
-                        itemPress="onProductSelect"
                         class="productTable">
                         <columns>
                             <Column>
@@ -45,7 +45,9 @@
                             </Column>
                         </columns>
                         <items>
-                            <ColumnListItem type="Navigation">
+                            <ColumnListItem
+                                type="Navigation"
+                                press="onProductSelect">
                                 <cells>
                                     <Text text="{ProductID}" class="tableData" />
                                     <Text text="{ProductName}" class="tableData" />

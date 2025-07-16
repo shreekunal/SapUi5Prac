@@ -8,5 +8,15 @@ sap.ui.define([
         onInit() {
         },
 
+        onShipperSelect: function (oEvent) {
+            // Get the selected shipper context
+            var oShipperContext = oEvent.getSource().getBindingContext();
+            var sShipperId = oShipperContext.getProperty("ShipperID");
+
+            // Navigate to Regions route with ShipperId
+            this.getOwnerComponent().getRouter().navTo("Regions", {
+                ShipperId: sShipperId
+            });
+        }
     });
 });
