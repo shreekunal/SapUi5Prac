@@ -1,0 +1,48 @@
+<mvc:View controllerName="project2.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:viz="sap.viz.ui5.controls"
+    xmlns:viz.data="sap.viz.ui5.data"
+    xmlns:viz.feeds="sap.viz.ui5.controls.common.feeds">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <VBox>
+                <HBox>
+                    <RadioButtonGroup
+                        id="radioButtonGroup"
+                        columns="4"
+                        select="onSelect">
+                        <buttons>
+                            <RadioButton text="Column" />
+                            <RadioButton text="Bar" selected='true' />
+                            <RadioButton text="Line" />
+                            <RadioButton text="Area" />
+                        </buttons>
+                    </RadioButtonGroup>
+                </HBox>
+                <viz:VizFrame
+                    id="idVizFrame"
+                    width="100%"
+                    height="400px"
+                    uiConfig="{applicationSet:'fiori'}"
+                    vizType="column">
+                    <viz:dataset>
+                        <viz.data:FlattenedDataset data="{/data}">
+                            <viz.data:dimensions>
+                                <viz.data:DimensionDefinition name="Category" value="{Category}" />
+                            </viz.data:dimensions>
+                            <viz.data:measures>
+                                <viz.data:MeasureDefinition name="Revenue" value="{Revenue}" />
+                                <viz.data:MeasureDefinition name="Profit" value="{Profit}" />
+                            </viz.data:measures>
+                        </viz.data:FlattenedDataset>
+                    </viz:dataset>
+                    <viz:feeds>
+                        <viz.feeds:FeedItem uid="valueAxis" type="Measure" values="Revenue" />
+                        <viz.feeds:FeedItem uid="categoryAxis" type="Dimension" values="Category" />
+                    </viz:feeds>
+                </viz:VizFrame>
+            </VBox>
+        </content>
+    </Page>
+</mvc:View>

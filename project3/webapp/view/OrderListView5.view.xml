@@ -1,0 +1,11 @@
+<mvc:View controllerName="project3.controller.OrderListView5"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>orderListTitle}">
+        <content>
+            <List id="orderList">
+                <!-- Order list content will be added here -->
+            </List>
+        </content>
+    </Page>
+</mvc:View>

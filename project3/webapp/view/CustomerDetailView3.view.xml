@@ -1,0 +1,11 @@
+<mvc:View controllerName="project3.controller.CustomerDetailView3"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>customerDetailTitle}">
+        <content>
+            <ObjectHeader id="customerHeader">
+                <!-- Customer detail content will be added here -->
+            </ObjectHeader>
+        </content>
+    </Page>
+</mvc:View>

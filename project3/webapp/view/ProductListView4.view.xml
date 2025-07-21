@@ -1,0 +1,11 @@
+<mvc:View controllerName="project3.controller.ProductListView4"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>productListTitle}">
+        <content>
+            <List id="productList">
+                <!-- Product list content will be added here -->
+            </List>
+        </content>
+    </Page>
+</mvc:View>

@@ -1,0 +1,11 @@
+<mvc:View controllerName="project3.controller.SettingsView9"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>settingsTitle}">
+        <content>
+            <Panel id="settingsPanel">
+                <!-- Settings content will be added here -->
+            </Panel>
+        </content>
+    </Page>
+</mvc:View>

@@ -1,0 +1,11 @@
+<mvc:View controllerName="project3.controller.OrderDetailView6"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>orderDetailTitle}">
+        <content>
+            <ObjectHeader id="orderHeader">
+                <!-- Order detail content will be added here -->
+            </ObjectHeader>
+        </content>
+    </Page>
+</mvc:View>
