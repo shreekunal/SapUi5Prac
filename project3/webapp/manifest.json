@@ -89,19 +89,26 @@
         "viewPath": "project3.view"
       },
       "routes": [
-        {
-          "name": "RouteDashboardView1",
-          "pattern": ":?query:",
-          "target": [
-            "TargetDashboardView1"
-          ]
-        }
+        { "pattern": "", "name": "dashboard", "target": [ "dashboard" ] },
+        { "pattern": "customers", "name": "customerList",  "target": [ "customerList" ] },
+        { "pattern": "customers/{CustomerID}", "name": "customerDetail", "target": [ "customerDetail" ]},
+        { "pattern": "products", "name": "productList",   "target": [ "productList" ] },
+        { "pattern": "orders", "name": "orderList",     "target": [ "orderList" ] },
+        { "pattern": "orders/{OrderID}", "name": "orderDetail", "target": [ "orderDetail" ] },
+        { "pattern": "suppliers", "name": "supplier",      "target": [ "supplier" ] },
+        { "pattern": "reports", "name": "reports",       "target": [ "reports" ] },
+        { "pattern": "settings", "name": "settings",      "target": [ "settings" ] }
       ],
       "targets": {
-        "TargetDashboardView1": {
-          "id": "DashboardView1",
-          "name": "DashboardView1"
-        }
+        "dashboard": { "id": "DashboardView1", "name": "DashboardView1" },
+        "customerList": { "id": "CustomerListView2", "name": "CustomerListView2" },
+        "customerDetail": { "id": "CustomerDetailView3", "name": "CustomerDetailView3" },
+        "productList": { "id": "ProductListView4", "name": "ProductListView4" },
+        "orderList": { "id": "OrderListView5", "name": "OrderListView5" },
+        "orderDetail": { "id": "OrderDetailView6", "name": "OrderDetailView6" },
+        "supplier": { "id": "SupplierView7", "name": "SupplierView7" },
+        "reports": { "id": "ReportsView8", "name": "ReportsView8" },
+        "settings": { "id": "SettingsView9", "name": "SettingsView9" }
       }
     },
     "rootView": {
